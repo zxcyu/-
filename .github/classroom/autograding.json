@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "ctest",
+      "setup": "cmake -B build -DCLOUD=ON -DCMAKE_CXX_COMPILER=clang++-10 -DCMAKE_BUILD_TYPE=Debug",
+      "run": "cmake --build build/ --target cloud-test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
